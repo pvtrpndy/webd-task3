@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+body{
+    background-color: #25373a;
+    margin:0px;
+    padding:0px;
+}
+
+#noteArea{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#noteArea .notes{
+    max-width: 200px;
+    min-width: 200px;
+    min-height:50px;
+    border: 3px solid black;
+    margin: 50px;
+    background-color: white;
+    text-align: center;
+    box-shadow:  0px 0px 5px white,
+    0px 0px 10px white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+ 
+}
+
+
+#noteArea .notes p{
+    background-color: white;    
+}
+
+#noteArea .notes button{
+    width:fit-content;
+    height:fit-content;
+    padding:7px 12px;
+    margin-left: 170px;
+    font-size:large;
+    border-radius:50%;
+    background:white;
+    transition:300ms;
+    background-color: red;
+    box-shadow: 0px 0px 19px -2px red e(0,0,0,0.2);
+       
+}
+#noteArea .notes button:hover{
+    box-shadow: 0px 0px 19px -2px red e(0,0,0,0.75);
+}
+.navBar{
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:30px;
+    border-radius: 25px;
+    background: #f148fb;
+    box-shadow:  0px 0px 5px #be39c6,
+                0px 0px 50px #be39c6,
+                0px 0px 25px #be39c6,   
+                0px 0px 200px #be39c6;   
+    border-radius:0px 0px 10px 10px;
+
+}
+
+.navBar h1{
+    font-family: 'Lato', cursive;
+}
+
+.app{
+    display:flex;
+    flex-direction: column;
+}
+#noteMake{
+    display:flex;
+    flex-direction:column;
+    width:fit-content;
+    align-items:center;
+    padding:30px 30px;
+    margin-left:50px;
+    margin-top:50px;
+    border-radius:5px;
+    box-shadow: 4px 4px 12px -4px rgba(0,0,0,0.75);
+    background: #09fbd3;
+    box-shadow:  0px 0px 5px #09fbd3,
+    0px 0px 50px #09fbd3,
+    0px 0px 25px #09fbd3;
+}
+
+#noteMake input, #noteMake textarea{
+    border:0;
+    box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.75);
+    border-radius:3px;
+    padding:5px;
+    font-family: 'Lato', cursive;
+    font-size:1.1rem;
+}
+
+#noteMake button{
+    width:fit-content;
+    height:fit-content;
+    border:0;
+    padding:7px 12px;
+    font-size:large;
+    border-radius:50%;
+    background:white;
+    transition:300ms;
+}
+
+#noteMake button:hover{
+    box-shadow: 0px 0px 19px -2px rgba(0,0,0,0.75);
+}
